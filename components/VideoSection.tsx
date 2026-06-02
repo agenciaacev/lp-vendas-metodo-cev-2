@@ -31,7 +31,7 @@ export default function VideoSection() {
         </div>
 
         <p className="text-center mt-8 mb-10 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>
-          Assista e entenda por que o CEV é a metodologia mais completa para quem quer vender todos os dias — com conteúdo que posiciona, estratégia que direciona e vendas que convertem.
+          Assista e entenda por que o CEV é a metodologia mais completa para quem quer vender todos os dias, com conteúdo que posiciona, estratégia que direciona e vendas que convertem.
         </p>
 
         <div className="flex justify-center">

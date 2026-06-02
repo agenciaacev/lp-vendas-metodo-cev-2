@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: 'O que é o AI CEV?',
-    a: 'É o Agente de Marketing com Inteligência Artificial disponível 24 horas. Ele gera textos, scripts, prompts, áudios, fotos, vídeos e PDFs baseados na metodologia da Cleane — tudo validado e pronto para usar.',
+    a: 'É o Agente de Marketing com Inteligência Artificial disponível 24 horas. Ele gera textos, scripts, prompts, áudios, fotos, vídeos e PDFs baseados na metodologia da Cleane, tudo validado e pronto para usar.',
   },
   {
     q: 'Tem suporte e comunidade?',
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: 'Nunca dei certo no digital. O Método CEV funciona para mim?',
-    a: 'É exatamente por isso que você precisa do CEV. Sem método, sem estratégia, sem resultado. Com o CEV você aprende o caminho — e o caminho funciona.',
+    a: 'É exatamente por isso que você precisa do CEV. Sem método, sem estratégia, sem resultado. Com o CEV você aprende o caminho, e o caminho funciona.',
   },
   {
     q: 'Tenho medo de investir e não ter retorno...',

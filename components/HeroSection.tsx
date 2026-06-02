@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useRef } from 'react'
-import Image from 'next/image'
 
 export default function HeroSection() {
   const counterRef = useRef<HTMLSpanElement>(null)
@@ -20,11 +19,13 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden hero-gradient noise-overlay pt-24">
+    <section className="relative min-h-screen flex items-end sm:items-center overflow-hidden noise-overlay pt-24 hero-bg bg-cover bg-no-repeat bg-position-[center_top]">
+      {/* Dark overlay — mobile: escurece de baixo; desktop: escurece da esquerda */}
+      <div className="absolute inset-0 sm:hidden" style={{background: 'linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 45%, rgba(10,10,10,0.1) 100%)'}} />
+      <div className="absolute inset-0 hidden sm:block" style={{background: 'linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.2) 100%)'}} />
+
       {/* Gold radial glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 right-0 w-[700px] h-[700px] -translate-y-1/2 translate-x-1/4 rounded-full"
-          style={{background: 'radial-gradient(ellipse, rgba(214,163,84,0.08) 0%, transparent 70%)'}} />
         <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full"
           style={{background: 'radial-gradient(ellipse, rgba(214,163,84,0.05) 0%, transparent 70%)'}} />
       </div>
@@ -33,82 +34,54 @@ export default function HeroSection() {
       <div className="absolute left-8 top-0 bottom-0 w-px opacity-10" style={{background: 'linear-gradient(to bottom, transparent, var(--gold), transparent)'}} />
       <div className="absolute right-8 top-0 bottom-0 w-px opacity-10" style={{background: 'linear-gradient(to bottom, transparent, var(--gold), transparent)'}} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full grid lg:grid-cols-2 gap-12 items-center py-20">
-        {/* Left: Text */}
-        <div data-aos="fade-right" data-aos-duration="900">
-          <p className="section-label mb-6 flex items-center gap-3">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pb-12 pt-4 sm:py-20">
+        <div className="max-w-2xl lg:max-w-3xl mx-auto sm:mx-0 text-center sm:text-left" data-aos="fade-right" data-aos-duration="900">
+          <p className="section-label mb-3 sm:mb-6 flex items-center justify-center sm:justify-start gap-3">
             <span className="w-8 h-px" style={{background: 'var(--gold)'}} />
             CONTEÚDO · ESTRATÉGIA · VENDAS
           </p>
 
-          <h1 className="font-bebas leading-none mb-6"
-            style={{fontSize: 'clamp(2.4rem, 3.5vw, 4.4rem)', color: 'var(--text-primary)'}}>
-            O MÉTODO QUE{' '}
-            <span className="gold-gradient block">TRANSFORMA CONTEÚDO</span>
-            EM VENDAS
+          <h1 className="font-bebas leading-none mb-3 sm:mb-6"
+            style={{fontSize: 'clamp(2.2rem, 3.2vw, 4.2rem)', color: 'var(--text-primary)'}}>
+            O MÉTODO QUE TRANSFORMA{' '}
+            <span className="gold-gradient block">CONTEÚDO EM VENDAS</span>
           </h1>
 
-          <p className="mb-4 leading-relaxed" style={{color: 'var(--text-secondary)', fontSize: '1.05rem'}}>
-            Conteúdo sem estratégia não vende. Estratégia sem conteúdo não alcança. O Método CEV une os três pilares que todo negócio precisa para crescer no digital — e fazer isso todos os dias.
+          <p className="mb-4 leading-relaxed text-sm sm:text-[1.05rem]" style={{color: 'var(--text-secondary)'}}>
+            Conteúdo sem estratégia não vende. Estratégia sem conteúdo não alcança. O Método CEV une os três pilares que todo negócio precisa para crescer no digital e fazer isso todos os dias.
           </p>
 
-          <p className="mb-10 text-sm" style={{color: 'var(--text-muted)'}}>
+          <p className="hidden sm:block mb-10" style={{color: 'var(--text-muted)', fontSize: '0.95rem'}}>
             Empresários, profissionais liberais e empreendedores do Brasil inteiro já aplicaram o CEV para sair do anonimato, construir autoridade e transformar seguidores em clientes reais.
           </p>
 
           {/* Stats */}
-          <div className="flex gap-8 mb-10">
+          <div className="flex justify-center sm:justify-start gap-4 sm:gap-8 mb-8 sm:mb-10">
             <div>
-              <div className="font-bebas text-3xl gold-gradient">
+              <div className="font-bebas text-2xl sm:text-4xl gold-gradient">
                 +<span ref={counterRef}>5.000.000</span>
               </div>
-              <div className="text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Seguidores</div>
+              <div className="text-[0.6rem] sm:text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Seguidores</div>
             </div>
             <div className="w-px" style={{background: 'var(--border)'}} />
             <div>
-              <div className="font-bebas text-3xl gold-gradient">+1 BI</div>
-              <div className="text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Visualizações</div>
+              <div className="font-bebas text-2xl sm:text-4xl gold-gradient">+1 BI</div>
+              <div className="text-[0.6rem] sm:text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Visualizações</div>
             </div>
             <div className="w-px" style={{background: 'var(--border)'}} />
             <div>
-              <div className="font-bebas text-3xl gold-gradient">17</div>
-              <div className="text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Anos de Exp.</div>
+              <div className="font-bebas text-2xl sm:text-4xl gold-gradient">17</div>
+              <div className="text-[0.6rem] sm:text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Anos de Exp.</div>
             </div>
           </div>
 
-          <a href="#produtos" className="btn-gold inline-flex items-center gap-3 px-10 py-4 text-sm rounded-sm pulse-gold">
-            QUERO APRENDER O MÉTODO CEV
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </a>
-        </div>
-
-        {/* Right: Hero image */}
-        <div className="relative flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
-          <div className="relative float-anim">
-            {/* Glow behind image */}
-            <div className="absolute inset-0 rounded-full blur-3xl opacity-30"
-              style={{background: 'radial-gradient(ellipse, var(--gold) 0%, transparent 70%)', transform: 'scale(0.8)'}} />
-            <Image
-              src="/cleane-hero.webp"
-              alt="Cleane Fontenele"
-              width={520}
-              height={680}
-              className="relative z-10 object-cover"
-              style={{
-                maxHeight: '75vh',
-                width: 'auto',
-                filter: 'drop-shadow(0 0 40px rgba(214,163,84,0.2))',
-              }}
-              priority
-            />
-          </div>
-          {/* Badge overlay */}
-          <div className="absolute bottom-10 left-4 card-gold-border rounded-sm px-4 py-3 backdrop-blur-sm"
-            style={{background: 'rgba(17,17,17,0.85)'}}>
-            <div className="text-xs tracking-widest uppercase mb-1" style={{color: 'var(--text-muted)'}}>Criadora do</div>
-            <div className="font-bebas text-xl gold-gradient">MÉTODO CEV</div>
+          <div className="flex justify-center sm:justify-start">
+            <a href="#produtos" className="btn-gold inline-flex items-center gap-3 px-12 py-5 text-base rounded-sm pulse-gold">
+              QUERO APRENDER O MÉTODO CEV
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>

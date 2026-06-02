@@ -7,7 +7,7 @@ const pillars = [
     symbol: '✦',
     label: 'Conteúdo',
     image: '/conteudo.png',
-    text: 'Você aprende a criar conteúdo com intenção — cada post com um papel específico dentro da jornada do cliente. Fim do conteúdo aleatório que não leva a lugar nenhum.',
+    text: 'Você aprende a criar conteúdo com intenção: cada post com um papel específico dentro da jornada do cliente. Fim do conteúdo aleatório que não leva a lugar nenhum.',
   },
   {
     letter: 'E',
@@ -94,7 +94,7 @@ export default function ForWhoSection() {
                     <span style={{color: 'var(--gold)'}}>{pillar.symbol}</span>
                     <p className="font-bebas tracking-widest uppercase"
                       style={{color: 'var(--gold)', lineHeight: 1, fontSize: 'clamp(1.7rem, 2.8vw, 2.4rem)', textShadow: '0 0 20px rgba(214,163,84,0.5)'}}>
-                      {pillar.letter} — {pillar.label}
+                      {pillar.letter} {pillar.label}
                     </p>
                     <span style={{color: 'var(--gold)'}}>{pillar.symbol}</span>
                   </div>

@@ -134,7 +134,7 @@ export default function ProductsSection() {
             {courses.map((course, i) => (
               <div
                 key={i}
-                className="relative rounded-sm flex flex-col overflow-hidden"
+                className="relative rounded-2xl flex flex-col overflow-hidden"
                 style={{
                   background: course.featured
                     ? 'linear-gradient(135deg, rgba(214,163,84,0.08), rgba(17,17,17,0.95))'
@@ -180,7 +180,7 @@ export default function ProductsSection() {
                         )}
                       </div>
                     )}
-                    <div className="font-bebas text-2xl gold-gradient">{course.price}</div>
+                    <div className="font-bebas text-4xl gold-gradient">{course.price}</div>
                     <div className="text-sm mt-1" style={{color: 'var(--text-muted)'}}>{course.priceVista}</div>
                   </div>
 
@@ -217,7 +217,7 @@ export default function ProductsSection() {
               <br />7 Continentes
             </h2>
             <p className="mt-4 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>
-              Um guia direto ao ponto para você entender como se posicionar, comunicar com clareza e transformar seguidores em clientes. Mais que um livro — uma visão viva, prática e atual sobre como usar conteúdo com estratégia para vender todos os dias, em qualquer mercado.
+              Um guia direto ao ponto para você entender como se posicionar, comunicar com clareza e transformar seguidores em clientes. Mais que um livro, uma visão viva, prática e atual sobre como usar conteúdo com estratégia para vender todos os dias, em qualquer mercado.
             </p>
           </div>
 
@@ -226,7 +226,7 @@ export default function ProductsSection() {
               {books.map((book, i) => (
                 <div
                   key={i}
-                  className="card-gold-border rounded-sm p-8 flex flex-col"
+                  className="card-gold-border rounded-2xl p-8 flex flex-col"
                   data-aos="fade-up"
                   data-aos-delay={i * 100}
                 >
@@ -248,7 +248,7 @@ export default function ProductsSection() {
                   </h3>
                   <p className="text-xs mb-6" style={{color: 'var(--text-muted)'}}>{book.subtitle}</p>
 
-                  <div className="font-bebas text-3xl gold-gradient mb-6">{book.price}</div>
+                  <div className="font-bebas text-5xl gold-gradient mb-6">{book.price}</div>
 
                   <ul className="space-y-3 flex-1 mb-6">
                     {book.features.map((feat, j) => (

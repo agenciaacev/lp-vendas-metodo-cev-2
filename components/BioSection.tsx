@@ -47,10 +47,10 @@ export default function BioSection() {
 
             <div className="space-y-4" style={{color: 'var(--text-secondary)', lineHeight: '1.8'}}>
               <p>
-                Cristã, empresária, apresentadora de televisão e especialista em Marketing Digital e Posicionamento Estratégico. Com <strong style={{color: 'var(--text-primary)'}}>17 anos de experiência</strong> em comunicação, é a criadora do Método CEV — Conteúdo, Estratégia e Vendas.
+                Cristã, empresária, apresentadora de televisão e especialista em Marketing Digital e Posicionamento Estratégico. Com <strong style={{color: 'var(--text-primary)'}}>17 anos de experiência</strong> em comunicação, é a criadora do Método CEV: Conteúdo, Estratégia e Vendas.
               </p>
               <p>
-                Uma trajetória construída na prática — da comunicação tradicional ao marketing digital — que resultou em um método real, testado e aplicado por pessoas de todos os mercados do Brasil.
+                Uma trajetória construída na prática, da comunicação tradicional ao marketing digital, que resultou em um método real, testado e aplicado por pessoas de todos os mercados do Brasil.
               </p>
               <p>
                 Nas redes sociais é acompanhada por <strong style={{color: 'var(--text-primary)'}}>mais de 5 milhões de seguidores</strong> e soma mais de <strong style={{color: 'var(--text-primary)'}}>1 bilhão de visualizações</strong> em todas as plataformas.
