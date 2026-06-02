@@ -28,7 +28,7 @@ export default function CTAFinalSection() {
           Conteúdo, Estratégia e Vendas. Os três pilares que transformam presença digital em resultado real. O método está aqui. A decisão é sua.
         </p>
 
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div data-aos="fade-up" data-aos-delay="200" className="flex justify-center">
           <a href="#produtos" className="btn-gold inline-flex items-center gap-3 px-14 py-5 text-base rounded-full">
             QUERO APRENDER O MÉTODO CEV
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
