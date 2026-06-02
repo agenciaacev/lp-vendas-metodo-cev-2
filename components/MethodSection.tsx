@@ -8,10 +8,10 @@ export default function MethodSection() {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-16" data-aos="fade-up">
           <p className="section-label mb-4">A METODOLOGIA</p>
-          <h2 className="font-bebas" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: 'var(--text-primary)'}}>
-            Conheça o{' '}
-            <span className="gold-gradient">Método CEV</span>
-            {' '}em Detalhes
+          <h2 className="font-bebas flex flex-wrap items-center justify-center gap-3" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: 'var(--text-primary)'}}>
+            Conheça o
+            <img src="/logo-principal.webp" alt="Método CEV" style={{height: '1em', width: 'auto', display: 'inline-block', verticalAlign: 'middle'}} />
+            em Detalhes
           </h2>
           <p className="mt-4 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>
             Ideal para empresários e empreendedores que querem se posicionar com autoridade, criar conteúdo estratégico e converter seguidores em clientes reais.

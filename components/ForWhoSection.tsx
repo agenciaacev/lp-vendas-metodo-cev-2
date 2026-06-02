@@ -33,9 +33,9 @@ export default function ForWhoSection() {
         {/* Header */}
         <div className="text-center mb-20" data-aos="fade-up">
           <p className="section-label mb-4">O FRAMEWORK</p>
-          <h2 className="font-bebas mb-4" style={{fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: 'var(--text-primary)'}}>
-            Para quem é o{' '}
-            <span className="gold-gradient">Método CEV</span>
+          <h2 className="font-bebas flex flex-wrap items-center justify-center gap-3 mb-4" style={{fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: 'var(--text-primary)'}}>
+            Para quem é o
+            <img src="/logo-principal.webp" alt="Método CEV" style={{height: '1em', width: 'auto', display: 'inline-block', verticalAlign: 'middle'}} />
           </h2>
           <p className="font-bebas mb-6" style={{fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', color: 'var(--text-secondary)'}}>
             Três letras. Um sistema completo de crescimento.

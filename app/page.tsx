@@ -6,6 +6,7 @@ import VideoSection from '@/components/VideoSection'
 import ForWhoSection from '@/components/ForWhoSection'
 import MethodSection from '@/components/MethodSection'
 import BioSection from '@/components/BioSection'
+import ProductGallery from '@/components/ProductGallery'
 import ProductsSection from '@/components/ProductsSection'
 import FAQSection from '@/components/FAQSection'
 import CTAFinalSection from '@/components/CTAFinalSection'
@@ -23,6 +24,7 @@ export default function Home() {
         <ForWhoSection />
         <MethodSection />
         <BioSection />
+        <ProductGallery />
         <ProductsSection />
         <FAQSection />
         <CTAFinalSection />

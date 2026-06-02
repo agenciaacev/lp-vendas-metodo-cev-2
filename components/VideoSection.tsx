@@ -35,7 +35,7 @@ export default function VideoSection() {
         </p>
 
         <div className="flex justify-center">
-          <a href="#produtos" className="btn-gold inline-flex items-center gap-3 px-10 py-4 text-sm rounded-sm">
+          <a href="#produtos" className="btn-gold inline-flex items-center gap-3 px-10 py-4 text-sm rounded-full">
             QUERO APRENDER O MÉTODO CEV
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
