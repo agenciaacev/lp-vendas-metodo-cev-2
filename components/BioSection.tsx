@@ -16,7 +16,7 @@ export default function BioSection() {
               <div className="absolute -inset-3 rounded-sm opacity-30"
                 style={{background: 'linear-gradient(135deg, var(--gold-dark), transparent, var(--gold))'}} />
               <Image
-                src="/cleane-bio.webp"
+                src="/identidadehero.png"
                 alt="Cleane Fontenele"
                 width={480}
                 height={560}
@@ -31,7 +31,7 @@ export default function BioSection() {
               <div className="absolute -bottom-4 -right-4 z-20 card-gold-border rounded-sm px-6 py-4 backdrop-blur-sm"
                 style={{background: 'rgba(5,5,5,0.9)'}}>
                 <div className="font-bebas text-3xl gold-gradient">+5 MI</div>
-                <div className="text-xs tracking-widest uppercase" style={{color: 'var(--text-muted)'}}>Seguidores</div>
+                <div className="text-xs tracking-widest uppercase" style={{color: '#ffffff'}}>Seguidores</div>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function BioSection() {
               <span style={{color: 'var(--text-primary)'}}>FONTENELE</span>
             </h2>
 
-            <div className="space-y-4" style={{color: 'var(--text-secondary)', lineHeight: '1.8'}}>
+            <div className="space-y-4" style={{color: '#ffffff', lineHeight: '1.8'}}>
               <p>
                 Cristã, empresária, apresentadora de televisão e especialista em Marketing Digital e Posicionamento Estratégico. Com <strong style={{color: 'var(--text-primary)'}}>17 anos de experiência</strong> em comunicação, é a criadora do Método CEV: Conteúdo, Estratégia e Vendas.
               </p>
@@ -77,7 +77,7 @@ export default function BioSection() {
             <div className="mt-6 pt-6 flex flex-wrap gap-2" style={{borderTop: '1px solid var(--border)'}}>
               {['Agência ACEV', 'Programa Corpo e Estilo de Vida', 'Clube CleanFit'].map((role) => (
                 <span key={role} className="px-3 py-1 text-xs rounded-full"
-                  style={{background: 'rgba(17,17,17,0.8)', border: '1px solid var(--border)', color: 'var(--text-muted)'}}>
+                  style={{background: 'rgba(17,17,17,0.8)', border: '1px solid var(--border)', color: '#ffffff'}}>
                   {role}
                 </span>
               ))}

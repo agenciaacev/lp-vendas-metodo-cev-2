@@ -81,7 +81,7 @@ export default function FAQSection() {
                 </div>
               </button>
               <div className={`overflow-hidden transition-all duration-400 ${open === i ? 'max-h-48 pb-6' : 'max-h-0'}`}>
-                <p style={{color: 'var(--text-secondary)', lineHeight: '1.7'}}>{faq.a}</p>
+                <p style={{color: '#ffffff', lineHeight: '1.7'}}>{faq.a}</p>
               </div>
             </div>
           ))}

@@ -17,7 +17,7 @@ export default function Navbar() {
         borderColor: scrolled ? 'rgba(214,163,84,0.1)' : 'transparent'
       }}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
-        <img src="/logo-principal.webp" alt="Método CEV" style={{height: '40px', width: 'auto'}} className="select-none" />
+        <img src="/logo-principal.webp" alt="Método CEV" style={{height: '60px', width: 'auto'}} className="select-none" />
         <a href="#produtos" className="inline-flex items-center gap-2 px-5 py-2.5 text-xs rounded-full font-bold tracking-widest text-white transition-all duration-300 hover:brightness-110"
           style={{background: '#25D366'}}>
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">

@@ -24,7 +24,7 @@ export default function CTAFinalSection() {
           <span className="gold-gradient block">PROTAGONISMO</span>
         </h2>
 
-        <p className="mb-12 text-lg max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}} data-aos="fade-up" data-aos-delay="150">
+        <p className="mb-12 text-lg max-w-2xl mx-auto" style={{color: '#ffffff'}} data-aos="fade-up" data-aos-delay="150">
           Conteúdo, Estratégia e Vendas. Os três pilares que transformam presença digital em resultado real. O método está aqui. A decisão é sua.
         </p>
 
@@ -38,7 +38,7 @@ export default function CTAFinalSection() {
         </div>
 
         {/* Trust badges */}
-        <div className="mt-12 flex flex-wrap justify-center gap-6 text-xs" style={{color: 'var(--text-muted)'}}>
+        <div className="mt-12 flex flex-wrap justify-center gap-6 text-xs" style={{color: '#ffffff'}}>
           {['🔒 Pagamento 100% Seguro', '⚡ Acesso Imediato', '🇧🇷 Para Todo o Brasil', '✓ Suporte Incluso'].map((item) => (
             <span key={item}>{item}</span>
           ))}

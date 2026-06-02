@@ -3,21 +3,21 @@ import Image from 'next/image'
 
 const pillars = [
   {
-    letter: 'C',
+    letter: '',
     symbol: '✦',
     label: 'Conteúdo',
     image: '/conteudo.png',
     text: 'Você aprende a criar conteúdo com intenção: cada post com um papel específico dentro da jornada do cliente. Fim do conteúdo aleatório que não leva a lugar nenhum.',
   },
   {
-    letter: 'E',
+    letter: '',
     symbol: '◆',
     label: 'Estratégia',
     image: '/estrategia.png',
     text: 'Posicionamento, calendário editorial, análise de mercado e construção de autoridade. Você passa a entender o jogo inteiro, não apenas o próximo post.',
   },
   {
-    letter: 'V',
+    letter: '',
     symbol: '▲',
     label: 'Vendas',
     image: '/vendas.png',
@@ -33,15 +33,12 @@ export default function ForWhoSection() {
         {/* Header */}
         <div className="text-center mb-20" data-aos="fade-up">
           <p className="section-label mb-4">O FRAMEWORK</p>
-          <h2 className="font-bebas flex flex-wrap items-center justify-center gap-3 mb-4" style={{fontSize: 'clamp(2.11rem, 4.93vw, 4.93rem)', color: 'var(--text-primary)'}}>
-            Para quem é o
-            <span className="gold-gradient">MÉTODO CEV</span>
+          <h2 className="font-bebas gold-gradient mb-4" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', lineHeight: '1.15'}}>
+            VOCÊ PRODUZ CONTEÚDO.<br />
+            MAS NÃO VÊ DINHEIRO
           </h2>
-          <p className="font-bebas mb-6" style={{fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', color: 'var(--text-secondary)'}}>
-            Três letras. Um sistema completo de crescimento.
-          </p>
-          <p className="max-w-2xl mx-auto" style={{color: 'var(--text-secondary)', lineHeight: '1.8'}}>
-            O Metodo CEV não é mais um curso de "como crescer no Instagram". É um framework operacional que cobre todo o ciclo de um negócio digital: da produção à conversão.
+          <p className="max-w-2xl mx-auto" style={{color: '#ffffff', lineHeight: '1.8'}}>
+            O método CEV resolve exatamente isso do primeiro post à primeira venda. três letras. um sitema. zero achismos
           </p>
         </div>
 
@@ -49,7 +46,7 @@ export default function ForWhoSection() {
         <div className="grid md:grid-cols-3 gap-6">
           {pillars.map((pillar, i) => (
             <div
-              key={pillar.letter}
+              key={pillar.label}
               className="relative rounded-3xl overflow-hidden group"
               style={{border: '1px solid rgba(214,163,84,0.2)'}}
               data-aos="fade-up"
@@ -73,20 +70,6 @@ export default function ForWhoSection() {
                     background: 'linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.4) 40%, transparent 70%)',
                   }}
                 />
-
-                {/* Letter badge top-left */}
-                <div
-                  className="absolute top-4 left-4 font-bebas flex items-center justify-center w-12 h-12 rounded-sm"
-                  style={{
-                    fontSize: '1.6rem',
-                    color: 'var(--gold)',
-                    background: 'rgba(0,0,0,0.6)',
-                    border: '1px solid rgba(214,163,84,0.4)',
-                    backdropFilter: 'blur(4px)',
-                  }}
-                >
-                  {pillar.letter}
-                </div>
 
                 {/* Caption / legend at bottom */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-center">

@@ -52,7 +52,7 @@ export default function ProductsSection() {
             <span className="gold-gradient">Conteúdo · Estratégia · Vendas</span>
             <br />7 Continentes
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>
+          <p className="mt-4 max-w-2xl mx-auto" style={{color: '#ffffff'}}>
             Um guia direto ao ponto para você entender como se posicionar, comunicar com clareza e transformar seguidores em clientes. Mais que um livro, uma visão viva, prática e atual sobre como usar conteúdo com estratégia para vender todos os dias, em qualquer mercado.
           </p>
         </div>
@@ -82,13 +82,13 @@ export default function ProductsSection() {
                 <h3 className="font-bebas text-xl mb-1" style={{color: 'var(--text-primary)', fontSize: '1.5rem'}}>
                   {book.name}
                 </h3>
-                <p className="text-xs mb-6" style={{color: 'var(--text-muted)'}}>{book.subtitle}</p>
+                <p className="text-xs mb-6" style={{color: '#ffffff'}}>{book.subtitle}</p>
 
                 <div className="font-bebas text-5xl gold-gradient mb-6">{book.price}</div>
 
                 <ul className="space-y-3 flex-1 mb-6">
                   {book.features.map((feat, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm" style={{color: 'var(--text-secondary)'}}>
+                    <li key={j} className="flex items-start gap-2 text-sm" style={{color: '#ffffff'}}>
                       <CheckIcon />
                       {feat}
                     </li>
@@ -98,7 +98,7 @@ export default function ProductsSection() {
                 <a href="#" className="btn-gold w-full py-3.5 text-sm rounded-full text-center block mb-3">
                   {book.cta}
                 </a>
-                <p className="text-center text-xs" style={{color: 'var(--text-muted)'}}>{book.footer}</p>
+                <p className="text-center text-xs" style={{color: '#ffffff'}}>{book.footer}</p>
               </div>
             ))}
           </div>

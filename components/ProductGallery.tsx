@@ -138,12 +138,12 @@ export default function ProductGallery() {
               <h3 className="font-bebas leading-none mb-2 whitespace-pre-line"
                 style={{ fontSize: '3.5rem', color: 'var(--text-primary)' }}>{p.name}</h3>
               <p className="text-sm font-semibold mb-4 tracking-widest uppercase" style={{ color: p.accentColor }}>{p.tagline}</p>
-              {p.priceOld && <p className="text-sm line-through mb-1" style={{ color: 'var(--text-muted)' }}>{p.priceOld}</p>}
+              {p.priceOld && <p className="text-sm line-through mb-1" style={{ color: '#ffffff' }}>{p.priceOld}</p>}
               <div className="font-bebas mb-1" style={{ fontSize: '3.5rem', color: p.accentColor }}>{p.price}</div>
-              <p className="text-sm mb-6" style={{ color: 'var(--text-muted)' }}>{p.priceInstall}</p>
+              <p className="text-sm mb-6" style={{ color: '#ffffff' }}>{p.priceInstall}</p>
               <ul className="space-y-2 mb-6">
                 {p.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
+                  <li key={j} className="flex items-center gap-2 text-sm" style={{ color: '#ffffff' }}>
                     <span style={{ color: p.accentColor }}>✦</span>{f}
                   </li>
                 ))}
@@ -233,14 +233,14 @@ export default function ProductGallery() {
 
                     {/* Description */}
                     <p className="mb-8 max-w-md leading-[1.75]"
-                      style={{ color: 'var(--text-secondary)', fontSize: '1rem' }}>
+                      style={{ color: '#ffffff', fontSize: '1rem' }}>
                       {p.description}
                     </p>
 
                     {/* Features 2-col */}
                     <div className="grid grid-cols-2 gap-x-6 gap-y-3.5 mb-10">
                       {p.features.map((f, j) => (
-                        <div key={j} className="flex items-start gap-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
+                        <div key={j} className="flex items-start gap-2 text-sm" style={{ color: '#ffffff' }}>
                           <span className="mt-0.5 text-[0.55rem]" style={{ color: p.accentColor }}>✦</span>
                           {f}
                         </div>
@@ -283,7 +283,7 @@ export default function ProductGallery() {
 
                       {p.priceOld && (
                         <div className="flex items-center justify-center gap-3 mb-3">
-                          <span className="text-2xl line-through" style={{ color: 'var(--text-muted)' }}>{p.priceOld}</span>
+                          <span className="text-2xl line-through" style={{ color: '#ffffff' }}>{p.priceOld}</span>
                           <span className="px-3 py-1 text-xs font-bold rounded-full"
                             style={{ background: 'rgba(0,180,80,0.12)', color: '#00B450', border: '1px solid rgba(0,180,80,0.28)' }}>
                             {p.discount}
@@ -302,7 +302,7 @@ export default function ProductGallery() {
                         {p.price}
                       </div>
 
-                      <div style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>
+                      <div style={{ color: '#ffffff', fontSize: '1rem' }}>
                         {p.priceInstall}
                       </div>
                     </div>
@@ -335,7 +335,7 @@ export default function ProductGallery() {
 
           {/* ── Slide counter ── */}
           <div className="absolute bottom-[1.85rem] right-12 font-bebas text-xl tracking-widest select-none"
-            style={{ color: 'var(--text-muted)' }}>
+            style={{ color: '#ffffff' }}>
             <span style={{ color: active.accentColor }}>{String(activeIndex + 1).padStart(2, '0')}</span>
             {' / '}{String(products.length).padStart(2, '0')}
           </div>

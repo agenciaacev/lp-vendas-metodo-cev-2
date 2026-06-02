@@ -26,12 +26,12 @@ export default function VideoSection() {
                 </svg>
               </div>
               <p className="section-label">[ VÍDEO DE APRESENTAÇÃO ]</p>
-              <p className="text-xs mt-2" style={{color: 'var(--text-muted)'}}>Inserir embed do vídeo aqui</p>
+              <p className="text-xs mt-2" style={{color: '#ffffff'}}>Inserir embed do vídeo aqui</p>
             </div>
           </div>
         </div>
 
-        <p className="text-center mt-8 mb-10 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>
+        <p className="text-center mt-8 mb-10 max-w-2xl mx-auto" style={{color: '#ffffff'}}>
           Assista e entenda por que o CEV é a metodologia mais completa para quem quer vender todos os dias, com conteúdo que posiciona, estratégia que direciona e vendas que convertem.
         </p>
 

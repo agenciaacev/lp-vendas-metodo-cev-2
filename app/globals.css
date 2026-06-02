@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-desk: 851px;
+}
+
 :root {
   --bg-primary: #050505;
   --bg-secondary: #0B0B0D;
@@ -163,7 +167,7 @@ body {
 /* Hero background — mobile/desktop */
 .hero-bg { background-image: url(/heromobile2.png); }
 
-@media (min-width: 640px) {
+@media (min-width: 851px) {
   .hero-bg { background-image: url(/heropc.png); }
 }
 
