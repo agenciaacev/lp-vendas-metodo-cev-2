@@ -42,7 +42,7 @@ export default function HeroSection() {
           </p>
 
           <h1 className="font-bebas leading-none mb-3 desk:mb-6"
-            style={{fontSize: 'clamp(2.2rem, 3.2vw, 4.2rem)', color: 'var(--text-primary)'}}>
+            style={{fontSize: 'clamp(2.8rem, 4.0vw, 5.0rem)', color: 'var(--text-primary)'}}>
             O MÉTODO QUE TRANSFORMA{' '}
             <span className="gold-gradient block">CONTEÚDO EM VENDAS</span>
           </h1>
