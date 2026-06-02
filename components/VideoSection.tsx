@@ -7,9 +7,10 @@ export default function VideoSection() {
       </div>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-12" data-aos="fade-up">
-          <p className="section-label mb-4">ASSISTA AGORA</p>
-          <h2 className="font-bebas gold-gradient" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)'}}>
-            O MÉTODO QUE VOCÊ PRECISA PARA CRESCER NO DIGITAL
+          <h2 className="font-bebas gold-gradient" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', lineHeight: '1.15'}}>
+            ASSISTA AGORA<br />
+            O MÉTODO QUE VOCÊ PRECISA<br />
+            PARA CRESCER NO DIGITAL
           </h2>
         </div>
 

@@ -10,7 +10,7 @@ export default function MethodSection() {
           <p className="section-label mb-4">A METODOLOGIA</p>
           <h2 className="font-bebas flex flex-wrap items-center justify-center gap-3" style={{fontSize: 'clamp(2.11rem, 4.22vw, 4.22rem)', color: 'var(--text-primary)'}}>
             Conheça o
-            <img src="/logo-principal.webp" alt="Método CEV" style={{height: '1em', width: 'auto', display: 'inline-block', verticalAlign: 'middle'}} />
+            <span className="gold-gradient">MÉTODO CEV</span>
             em Detalhes
           </h2>
           <p className="mt-4 max-w-2xl mx-auto" style={{color: 'var(--text-secondary)'}}>

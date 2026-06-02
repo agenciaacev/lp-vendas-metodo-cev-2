@@ -1,11 +1,10 @@
 'use client'
-import Image from 'next/image'
 export default function Footer() {
   return (
     <footer style={{background: 'var(--bg-primary)', borderTop: '1px solid var(--border)'}}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src="/logo-principal.webp" alt="Método CEV" style={{height: '36px', width: 'auto'}} />
+          <span className="font-bebas gold-gradient" style={{fontSize: '1.6rem', letterSpacing: '0.05em'}}>MÉTODO CEV</span>
           <div className="text-center">
             <p className="text-xs mb-1" style={{color: '#555555'}}>
               Cleane Fontenele 2026 | Todos os Direitos Reservados
