@@ -20,9 +20,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-end sm:items-center overflow-hidden noise-overlay pt-24 hero-bg bg-cover bg-no-repeat bg-position-[center_top]">
-      {/* Dark overlay — mobile: escurece de baixo; desktop: escurece da esquerda */}
-      <div className="absolute inset-0 sm:hidden" style={{background: 'linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 45%, rgba(10,10,10,0.1) 100%)'}} />
-      <div className="absolute inset-0 hidden sm:block" style={{background: 'linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.2) 100%)'}} />
 
       {/* Gold radial glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -47,11 +44,11 @@ export default function HeroSection() {
             <span className="gold-gradient block">CONTEÚDO EM VENDAS</span>
           </h1>
 
-          <p className="mb-4 leading-relaxed text-sm sm:text-[1.05rem]" style={{color: 'var(--text-secondary)'}}>
+          <p className="mb-4 leading-relaxed text-sm sm:text-[1.05rem] max-w-[30rem] mx-auto sm:mx-0" style={{color: '#ffffff'}}>
             Conteúdo sem estratégia não vende. Estratégia sem conteúdo não alcança. O Método CEV une os três pilares que todo negócio precisa para crescer no digital e fazer isso todos os dias.
           </p>
 
-          <p className="hidden sm:block mb-10" style={{color: 'var(--text-muted)', fontSize: '0.95rem'}}>
+          <p className="hidden sm:block mb-10 max-w-[30rem]" style={{color: '#ffffff', fontSize: '0.95rem'}}>
             Empresários, profissionais liberais e empreendedores do Brasil inteiro já aplicaram o CEV para sair do anonimato, construir autoridade e transformar seguidores em clientes reais.
           </p>
 

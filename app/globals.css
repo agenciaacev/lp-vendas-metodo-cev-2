@@ -161,9 +161,9 @@ body {
 .pulse-gold { animation: pulse-gold 3s ease-in-out infinite; }
 
 /* Hero background — mobile/desktop */
-.hero-bg { background-image: url(/heromobile.png); }
+.hero-bg { background-image: url(/heromobile2.png); }
 
 @media (min-width: 640px) {
-  .hero-bg { background-image: url(/imghero.png); }
+  .hero-bg { background-image: url(/heropc.png); }
 }
 
