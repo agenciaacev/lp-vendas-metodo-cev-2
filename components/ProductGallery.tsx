@@ -198,10 +198,12 @@ function PlanCard({ p, delay = 0 }: { p: Plan; delay?: number }) {
 function IPhone17Mockup({
   label,
   sublabel,
+  videoSrc,
   aosDelay = 0,
 }: {
   label: string
   sublabel?: string
+  videoSrc?: string
   aosDelay?: number
 }) {
   return (
@@ -292,52 +294,58 @@ function IPhone17Mockup({
             }} />
 
             {/* Conteúdo da tela */}
-            <div style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'radial-gradient(ellipse at 50% 55%, rgba(214,163,84,0.07) 0%, transparent 65%)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              paddingTop: '74px',
-              paddingBottom: '46px',
-              paddingLeft: '22px',
-              paddingRight: '22px',
-            }}>
-              {/* Play */}
+            {videoSrc ? (
+              <video
+                src={videoSrc}
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  position: 'absolute', inset: 0,
+                  width: '100%', height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            ) : (
               <div style={{
-                width: '76px', height: '76px',
-                borderRadius: '50%',
-                background: 'linear-gradient(135deg, #9A6A2F, #D6A354, #F1C87A)',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                marginBottom: '20px',
-                boxShadow: '0 0 36px rgba(214,163,84,0.45)',
-                cursor: 'pointer',
-                flexShrink: 0,
+                position: 'absolute',
+                inset: 0,
+                background: 'radial-gradient(ellipse at 50% 55%, rgba(214,163,84,0.07) 0%, transparent 65%)',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingTop: '74px',
+                paddingBottom: '46px',
+                paddingLeft: '22px',
+                paddingRight: '22px',
               }}>
-                <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
-                  <path d="M6 4l11 6-11 6V4z" fill="#050505" />
-                </svg>
-              </div>
-
-              <p style={{
-                fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase',
-                fontWeight: 600, color: '#D6A354', textAlign: 'center', lineHeight: 1.4,
-              }}>{label}</p>
-
-              {sublabel && (
+                <div style={{
+                  width: '76px', height: '76px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #9A6A2F, #D6A354, #F1C87A)',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  marginBottom: '20px',
+                  boxShadow: '0 0 36px rgba(214,163,84,0.45)',
+                  flexShrink: 0,
+                }}>
+                  <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+                    <path d="M6 4l11 6-11 6V4z" fill="#050505" />
+                  </svg>
+                </div>
                 <p style={{
-                  color: 'rgba(255,255,255,0.45)', fontSize: '0.65rem',
-                  marginTop: '6px', textAlign: 'center', lineHeight: 1.4,
-                }}>{sublabel}</p>
-              )}
-
-              <p style={{
-                color: 'rgba(255,255,255,0.18)', fontSize: '0.6rem',
-                marginTop: '18px', textAlign: 'center',
-              }}>[ Inserir vídeo aqui ]</p>
-            </div>
+                  fontSize: '0.7rem', letterSpacing: '0.18em', textTransform: 'uppercase',
+                  fontWeight: 600, color: '#D6A354', textAlign: 'center', lineHeight: 1.4,
+                }}>{label}</p>
+                {sublabel && (
+                  <p style={{
+                    color: 'rgba(255,255,255,0.45)', fontSize: '0.65rem',
+                    marginTop: '6px', textAlign: 'center', lineHeight: 1.4,
+                  }}>{sublabel}</p>
+                )}
+              </div>
+            )}
 
             {/* Indicador Home */}
             <div style={{
@@ -546,6 +554,7 @@ export default function ProductGallery() {
             <IPhone17Mockup
               label="Plataforma Método CEV"
               sublabel="Vídeo de apresentação"
+              videoSrc="/plataforma.MOV"
               aosDelay={0}
             />
 
@@ -598,6 +607,7 @@ export default function ProductGallery() {
                 <IPhone17Mockup
                   label="AI CEV em ação"
                   sublabel="Inteligência Artificial disponível 24h"
+                  videoSrc="/videoIA.MOV"
                   aosDelay={200}
                 />
 
