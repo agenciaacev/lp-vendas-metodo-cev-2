@@ -16,10 +16,11 @@ export default function BioSection() {
               <div className="absolute -inset-3 rounded-sm opacity-30"
                 style={{background: 'linear-gradient(135deg, var(--gold-dark), transparent, var(--gold))'}} />
               <Image
-                src="/identidadehero.png"
+                src="/bannerid.png"
                 alt="Cleane Fontenele"
                 width={480}
                 height={560}
+                loading="eager"
                 className="relative z-10 rounded-sm object-cover"
                 style={{
                   maxHeight: '70vh',

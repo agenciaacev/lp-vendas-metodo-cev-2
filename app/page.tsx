@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
 import VideoSection from '@/components/VideoSection'
 import ForWhoSection from '@/components/ForWhoSection'
-import MethodSection from '@/components/MethodSection'
 import BioSection from '@/components/BioSection'
 import ProductGallery from '@/components/ProductGallery'
 import ProductsSection from '@/components/ProductsSection'
@@ -22,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <VideoSection />
         <ForWhoSection />
-        <MethodSection />
         <BioSection />
         <ProductGallery />
         <ProductsSection />
