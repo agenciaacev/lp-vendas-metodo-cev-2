@@ -31,7 +31,7 @@ export default function BioSection() {
               {/* Stats overlay */}
               <div className="absolute -bottom-4 -right-4 z-20 card-gold-border rounded-sm px-6 py-4 backdrop-blur-sm"
                 style={{background: 'rgba(5,5,5,0.9)'}}>
-                <div className="font-bebas text-3xl gold-gradient">+5 MI</div>
+                <div className="font-bebas text-3xl gold-gradient">+6 MI</div>
                 <div className="text-xs tracking-widest uppercase" style={{color: '#ffffff'}}>Seguidores</div>
               </div>
             </div>

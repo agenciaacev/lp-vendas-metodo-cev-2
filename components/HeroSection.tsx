@@ -8,7 +8,7 @@ export default function HeroSection() {
     const el = counterRef.current
     if (!el) return
     let current = 0
-    const target = 5000000
+    const target = 6000000
     const step = Math.ceil(target / 80)
     const timer = setInterval(() => {
       current = Math.min(current + step, target)
@@ -59,7 +59,7 @@ export default function HeroSection() {
           <div className="flex justify-center desk:justify-start gap-4 desk:gap-8 mb-8 desk:mb-10">
             <div>
               <div className="font-bebas text-2xl desk:text-4xl gold-gradient">
-                +<span ref={counterRef}>5.000.000</span>
+                +<span ref={counterRef}>6.000.000</span>
               </div>
               <div className="text-[0.6rem] desk:text-xs tracking-widest uppercase" style={{color: '#ffffff'}}>Seguidores</div>
             </div>

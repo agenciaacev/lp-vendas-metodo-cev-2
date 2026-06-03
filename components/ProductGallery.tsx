@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import { useRef, useEffect } from 'react'
 
 interface Plan {
@@ -88,7 +87,7 @@ const aiPlan: Plan = {
   priceOld: null,
   discount: null,
   features: [
-    'Tudo do Completo incluso',
+    'Todas as aulas + participantes especiais',
     'Agente de Marketing IA disponível 24h',
     'Gera prompt, textos e scripts de conteúdo validados',
     'Templates já validados e autorais',
@@ -199,20 +198,27 @@ function IPhone17Mockup({
   label,
   sublabel,
   videoSrc,
+  topLabel,
   aosDelay = 0,
 }: {
   label: string
   sublabel?: string
   videoSrc?: string
+  topLabel?: string
   aosDelay?: number
 }) {
   return (
     <div
-      className="flex justify-center items-center py-4"
+      className="flex flex-col items-center"
       data-aos="fade-up"
       data-aos-duration="900"
       data-aos-delay={aosDelay}
     >
+      {topLabel && (
+        <p className="font-bebas text-center mb-3" style={{ fontSize: '1.8rem', color: '#D6A354', letterSpacing: '0.12em' }}>
+          {topLabel}
+        </p>
+      )}
       {/* Wrapper para posicionar os botões laterais */}
       <div className="relative" style={{ width: '320px' }}>
 
@@ -596,49 +602,45 @@ export default function ProductGallery() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-            {/* Col 1: Completo + AI card (mesma proporção 1/3) */}
-            <PlanCard p={aiPlan} delay={100} />
-
-            {/* Col 2-3: iPhone com livro no canto inferior direito */}
-            <div className="md:col-span-2 flex justify-center">
-              {/* container fit-content para o absolute ser relativo ao telefone */}
-              <div className="relative flex flex-col items-center" style={{ width: 'fit-content' }}>
-
-                <IPhone17Mockup
-                  label="AI CEV em ação"
-                  sublabel="Inteligência Artificial disponível 24h"
-                  videoSrc="/videoIA.MOV"
-                  aosDelay={200}
-                />
-
-                {/* Livro: canto inferior direito no desktop, abaixo no mobile */}
-                <div
-                  className="flex flex-col items-center gap-1 mt-4 md:mt-0 md:absolute md:bottom-20 md:-right-20 z-10"
-                  data-aos="fade-up"
-                  data-aos-delay={400}
-                >
-                  <span className="font-bebas" style={{ fontSize: '1.6rem', color: '#D6A354', lineHeight: 1 }}>+</span>
-                  <Image
-                    src="/livro.webp"
-                    alt="Livro Digital Método CEV"
-                    width={62}
-                    height={80}
-                    className="object-contain"
-                    style={{
-                      borderRadius: '4px',
-                      border: '1px solid rgba(214,163,84,0.25)',
-                      boxShadow: '0 8px 20px rgba(0,0,0,0.6), 0 0 12px rgba(214,163,84,0.2)',
-                    }}
-                  />
-                  <p style={{
-                    fontSize: '0.48rem', letterSpacing: '0.1em', textTransform: 'uppercase',
-                    color: 'rgba(255,255,255,0.4)', textAlign: 'center', lineHeight: 1.4,
-                  }}>
-                    Livro Digital<br />*BÔNUS*
-                  </p>
-                </div>
+            {/* Col 1-2: dois celulares com + entre eles */}
+            {/* Mobile: títulos + só IA CEV */}
+            <div className="sm:hidden md:col-span-2 flex flex-col items-center">
+              <div className="flex flex-col items-center mb-3">
+                <span className="font-bebas" style={{ fontSize: '1.8rem', color: '#D6A354', letterSpacing: '0.12em', lineHeight: 1.2 }}>PLATAFORMA COMPLETA</span>
+                <span className="font-bebas" style={{ fontSize: '2rem', color: '#D6A354', lineHeight: 1 }}>+</span>
+                <span className="font-bebas" style={{ fontSize: '1.8rem', color: '#D6A354', letterSpacing: '0.12em', lineHeight: 1.2 }}>IA CEV</span>
               </div>
+              <IPhone17Mockup
+                label="AI CEV em ação"
+                sublabel="Inteligência Artificial disponível 24h"
+                videoSrc="/videoIA.MOV"
+                aosDelay={0}
+              />
             </div>
+
+            {/* Desktop: dois celulares + "+" */}
+            <div className="hidden sm:grid md:col-span-2" style={{ gridTemplateColumns: '1fr auto 1fr', gap: '1rem', alignItems: 'start' }}>
+              <IPhone17Mockup
+                label="Plataforma Método CEV"
+                sublabel="Vídeo de apresentação"
+                videoSrc="/plataforma.MOV"
+                topLabel="PLATAFORMA COMPLETA"
+                aosDelay={0}
+              />
+              <div className="flex items-start" style={{ paddingTop: '0.3rem' }}>
+                <span className="font-bebas" style={{ fontSize: '1.8rem', color: '#D6A354', lineHeight: 1 }}>+</span>
+              </div>
+              <IPhone17Mockup
+                label="AI CEV em ação"
+                sublabel="Inteligência Artificial disponível 24h"
+                videoSrc="/videoIA.MOV"
+                topLabel="IA CEV"
+                aosDelay={150}
+              />
+            </div>
+
+            {/* Col 3: card Completo + AI */}
+            <PlanCard p={aiPlan} delay={300} />
           </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 glow-line" />
