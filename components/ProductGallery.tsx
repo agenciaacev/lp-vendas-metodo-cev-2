@@ -17,6 +17,7 @@ interface Plan {
   discount: string | null
   features: string[]
   borderColor: string
+  glowClass?: string
 }
 
 const essencial: Plan = {
@@ -98,6 +99,7 @@ const aiPlan: Plan = {
     'Livro digital Método CEV Completo *BONUS*',
   ],
   borderColor: 'rgba(0,180,80,0.35)',
+  glowClass: 'glow-green',
 }
 
 function CheckDot() {
@@ -125,7 +127,7 @@ function PlanCard({ p, delay = 0 }: { p: Plan; delay?: number }) {
       </div>
 
       <div
-        className="rounded-2xl p-7 flex flex-col flex-1"
+        className={`rounded-2xl p-7 flex flex-col flex-1${p.glowClass ? ` ${p.glowClass}` : ''}`}
         style={{ background: 'var(--bg-card)', border: `1px solid ${p.borderColor}` }}
       >
         <h3

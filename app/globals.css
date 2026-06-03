@@ -199,8 +199,14 @@ body {
 
 .pulse-gold { animation: pulse-gold 3s ease-in-out infinite; }
 
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 16px rgba(0,180,80,0.3), 0 0 0 1px rgba(0,180,80,0.35); }
+  50% { box-shadow: 0 0 40px rgba(0,180,80,0.7), 0 0 0 1px rgba(0,180,80,0.7); }
+}
+.glow-green { animation: pulse-green 2s ease-in-out infinite; }
+
 /* Hero background — mobile/desktop */
-.hero-bg { background-image: url(/heromobile2.png); }
+.hero-bg { background-image: url(/heromobile.png); }
 
 @media (min-width: 851px) {
   .hero-bg { background-image: url(/hero.png); }
